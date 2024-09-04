@@ -1333,7 +1333,7 @@ was done
     - Remove output of guestToolsUnmanaged if --open_vm_tools_ok
     - Fully ignore unknown states for hardware
 
-- 04 Auf 2022 M.Fuerstenau version 1.2.5
+- 04 Aug 2022 M.Fuerstenau version 1.2.5
   - Renamed module host_list_vm_volumes_info to host_volumes_info
     because name was misleading
   - Minor corrections in help.pm
@@ -1343,3 +1343,6 @@ was done
     and check is with lowercase (MYSERVER vs. myserver). So for example
     checking for snapshots may result in no old snapshots found while 
     there are some. Fixed by adding option --ignore_casesensitive.
+
+- 04 Sep 2024 ccztux version 1.2.6
+  - The powerstate poweredOff of a single virtual host is now CRITICAL

@@ -71,6 +71,10 @@ sub vm_runtime_info
        else
           {
           $output = "Power state: " . $runtime->powerState->val;
+          if ($runtime->powerState->val eq "poweredOff")
+             {
+             $state = 2;
+             }
           }
        $state = check_state($state, $actual_state);
        }
